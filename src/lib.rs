@@ -9,11 +9,11 @@ pub fn run_gen() {
     println!("Matches = {:?}", matches);
 
     match matches.subcommand() {
-        ("new", Some(_)) => {
-            new::run(matches);
+        ("new", Some(sub_matches)) => {
+            new::run(sub_matches);
         },
-        ("generate", Some(_)) => {
-            generate::run(matches);
+        ("generate", Some(sub_matches)) => {
+            generate::run(sub_matches);
         },
         _ => { println!("No subcommand");}
     };

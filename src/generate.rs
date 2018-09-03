@@ -1,4 +1,6 @@
 use clap::ArgMatches;
 
-pub fn run(matches: ArgMatches) {}
+pub fn run(matches: &ArgMatches) {
+    println!("Matches = {:?}", matches);
+}
 
