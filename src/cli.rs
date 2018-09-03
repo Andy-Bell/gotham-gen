@@ -39,7 +39,7 @@ fn resource_subcommand() -> App<'static, 'static> {
     SubCommand::with_name("resource")
         .about("Allows the generation of a db-backed struct, with relevant routes")
         .arg(Arg::with_name("name")
-             .help("Sets the name of the server application")
+             .help("Sets the name of the resource")
              .required(true)
              .takes_value(true))
 
@@ -49,7 +49,7 @@ fn struct_subcommand() -> App<'static, 'static> {
     SubCommand::with_name("struct")
         .about("Allows the generation of a db-backed struct on it's own")
         .arg(Arg::with_name("name")
-             .help("Sets the name of the server application")
+             .help("Sets the name of the struct")
              .required(true)
              .takes_value(true))
 }
