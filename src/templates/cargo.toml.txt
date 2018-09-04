@@ -1,0 +1,22 @@
+[package]
+name = "{name}"
+version = "0.1.0"
+authors = ["name <email@example.com>"]
+
+[dependencies]
+chrono = {version = "0.4", features = ["serde"] }
+diesel = {version = "1.2", features = ["postgres", "chrono", "uuid"] }
+dotenv = "0.11"
+futures = "0.1"
+gotham = "0.2"
+gotham_derive = "0.2"
+gotham_serde_json_body_parser = "0.2"
+hyper = "0.11"
+log = "0.4"
+mime = "0.3"
+r2d2 = "0.8"
+r2d2-diesel = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+unicase = "2.1"
